@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "memoryAutomatic": true,
+  "timerCancelled": true,
+  "completeGames": [
+    "visual",
+    "listen"
+  ],
+  "speechInvocation": true,
+  "muteFallback": true,
+  "widths": [
+    320,
+    375,
+    768,
+    1280
+  ],
+  "errors": [],
+  "limitations": [
+    "Voz invocada con stub; sin escucha humana ni iPhone físico."
+  ]
+}

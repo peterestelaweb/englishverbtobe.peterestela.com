@@ -1,0 +1,47 @@
+name: Deploy englishverbtobe by FTPS
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Upload web to captive FTP root
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Write deploy marker
+        run: |
+          printf 'commit=%s\nrun=%s\nbuilt_at=%s\n' \
+            '${{ github.sha }}' \
+            '${{ github.run_id }}' \
+            "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > web/deploy-marker.txt
+
+      - name: Deploy only web/
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          port: 21
+          protocol: ftps
+          local-dir: ./web/
+          server-dir: /
+
+      - name: Verify public marker
+        run: |
+          curl --fail --silent --show-error --location \
+            https://englishverbtobe.peterestela.com/deploy-marker.txt \
+            | tee /tmp/deploy-marker.txt
+          grep -F '${{ github.sha }}' /tmp/deploy-marker.txt
+          curl --fail --silent --show-error --location --compressed \
+            https://englishverbtobe.peterestela.com/ \
+            | grep -F 'Nueve juegos. Una nueva aventura.'

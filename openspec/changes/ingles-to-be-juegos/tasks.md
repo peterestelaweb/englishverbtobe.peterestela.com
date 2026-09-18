@@ -1,0 +1,4 @@
+- [x] Registrar encargo.
+- [x] Implementar tres juegos.
+- [x] Verificar juegos y navegación.
+- [x] Publicar y comprobar archivos remotos.

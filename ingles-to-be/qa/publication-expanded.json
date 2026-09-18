@@ -1,0 +1,14 @@
+{
+  "deploy": "6aaafbdc8e8c0a0da1334f37",
+  "url": "https://ingles-pronombres-to-be.netlify.app",
+  "sha256Matches": {
+    "app.js": true,
+    "competition.js": true,
+    "deploy-marker.txt": true,
+    "game-bank.js": true,
+    "games.js": true,
+    "index.html": true,
+    "styles.css": true,
+    "tokens.css": true
+  }
+}

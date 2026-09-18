@@ -1,0 +1,11 @@
+:root {
+ --color-paper: #f5f3ec; --color-surface: #fcfbf7; --color-ink: #202b27;
+ --color-muted: #58645c; --color-accent: #286347; --color-accent-ink: #fcfbf7;
+ --color-soft: #e3ece1; --color-rule: #c4cbbf; --color-negative: #86452d;
+ --color-negative-soft: #f3e6dd; --color-focus: #172d65; --color-clear: transparent;
+ --font-display: 'Palatino Linotype', 'Book Antiqua', Palatino, Georgia, serif;
+ --font-body: 'Avenir Next', Avenir, 'Trebuchet MS', sans-serif;
+ --space-xs: 4px; --space-sm: 8px; --space-md: 16px; --space-lg: 24px; --space-xl: 32px; --space-2xl: 48px;
+ --radius-sm: 6px; --radius-md: 12px; --ease-move: cubic-bezier(.2,.75,.2,1); --dur-move: 650ms;
+}
+:root{--game-blue:#1551a1;--game-blue-soft:#e3efff;--game-orange:#9a4209;--game-orange-soft:#fff0cf;--game-purple:#6935a1;--game-purple-soft:#f0e5ff;--game-success:#176642;--game-success-soft:#daf5e4;--game-error:#a02c39;--game-error-soft:#ffe7eb;}

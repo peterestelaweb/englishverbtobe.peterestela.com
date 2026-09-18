@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "checks": [
+    "7 games completed",
+    "3 choice games solo and duel",
+    "wrong answers: 30 points",
+    "duel 360/460",
+    "records persist",
+    "memory correct feedback/mismatch auto-hide/matched removal/reset",
+    "order hints and undo",
+    "keyboard Enter",
+    "reduced motion",
+    "storage blocked",
+    "lesson and practice navigation"
+  ],
+  "viewports": [
+    320,
+    375,
+    414,
+    768,
+    1280
+  ],
+  "errors": []
+}

@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "rounds": 22,
+  "viewports": [
+    320,
+    375,
+    414,
+    768,
+    1280
+  ],
+  "checks": [
+    "three complete games",
+    "wrong answers and first attempt scoring",
+    "pairs reselection",
+    "empty answer",
+    "undo",
+    "reset",
+    "lesson and quiz navigation"
+  ],
+  "errors": []
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "duel": "460-460 tie, equal 4 turns each",
+  "assistedPoints": 30,
+  "subsequentCleanTotal": 130,
+  "audioNotes": 29,
+  "mute": "no new oscillator starts",
+  "records": "persisted across reload and filtered by game/mode",
+  "storageBlocked": "game still playable",
+  "viewports": [
+    320,
+    375,
+    414,
+    768,
+    1280
+  ],
+  "reducedMotion": "no animations"
+}

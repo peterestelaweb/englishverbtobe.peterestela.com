@@ -1,0 +1,41 @@
+{
+  "url": "https://ingles-pronombres-to-be.netlify.app/",
+  "deploy_id": "6aa91dfe70dd7a6aef8129d6",
+  "checks": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256_match": true
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "sha256_match": true
+    },
+    {
+      "file": "games.js",
+      "status": 200,
+      "sha256_match": true
+    },
+    {
+      "file": "competition.js",
+      "status": 200,
+      "sha256_match": true
+    },
+    {
+      "file": "styles.css",
+      "status": 200,
+      "sha256_match": true
+    },
+    {
+      "file": "tokens.css",
+      "status": 200,
+      "sha256_match": true
+    },
+    {
+      "file": "deploy-marker.txt",
+      "status": 200,
+      "sha256_match": true
+    }
+  ]
+}

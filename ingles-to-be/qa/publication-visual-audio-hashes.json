@@ -1,0 +1,11 @@
+{
+  "app.js": true,
+  "competition.js": true,
+  "deploy-marker.txt": true,
+  "game-bank.js": true,
+  "games.js": true,
+  "illustrated-games.js": true,
+  "index.html": true,
+  "styles.css": true,
+  "tokens.css": true
+}
