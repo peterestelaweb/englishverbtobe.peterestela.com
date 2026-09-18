@@ -1,9 +1,4 @@
-# juegos-visuales-audio Specification
-
-## Purpose
-Hacer más fluida la memoria bilingüe y practicar el verbo to be mediante ilustraciones y escucha accesible.
-
-## Requirements
+## MODIFIED Requirements
 
 ### Requirement: Memoria automática
 El juego SHALL mostrar un resultado inmediato al descubrir dos fichas. Si forman pareja, SHALL mostrar «Correcto» y retirar ambas del tablero; si no forman pareja, SHALL mostrar «Incorrecto», mantenerlas visibles durante 1,8 segundos y ocultarlas después. Durante ese intervalo SHALL bloquear una tercera selección. Al reiniciar o cambiar de juego SHALL cancelar el temporizador pendiente.
@@ -19,9 +14,3 @@ El juego SHALL mostrar un resultado inmediato al descubrir dos fichas. Si forman
 #### Scenario: Reinicio durante la espera
 - **WHEN** se reinicia o cambia de juego antes de ocultar
 - **THEN** el temporizador anterior se cancela y no altera la nueva partida.
-
-### Requirement: Juegos ilustrados y escucha
-Los juegos SHALL ofrecer ilustraciones locales, retos de verbo y escucha con reproducción voluntaria, alternativa textual y compatibilidad con puntuación individual/duelo.
-#### Scenario: Audio no disponible
-- **WHEN** no hay síntesis de voz o está silenciada
-- **THEN** se puede resolver el reto mediante una pista textual sin bloquear la partida.
