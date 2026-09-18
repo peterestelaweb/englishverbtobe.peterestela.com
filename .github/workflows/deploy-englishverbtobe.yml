@@ -23,7 +23,7 @@ jobs:
           printf 'commit=%s\nrun=%s\nbuilt_at=%s\n' \
             '${{ github.sha }}' \
             '${{ github.run_id }}' \
-            "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > web/deploy-marker.txt
+            "$(date -u +%Y-%m-%dT%H:%M:%SZ)" > ingles-to-be/web/deploy-marker.txt
 
       - name: Deploy only web/
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
@@ -33,7 +33,7 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           port: 21
           protocol: ftps
-          local-dir: ./web/
+          local-dir: ./ingles-to-be/web/
           server-dir: /
 
       - name: Verify public marker
